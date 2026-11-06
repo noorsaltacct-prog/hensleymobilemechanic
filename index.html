@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hensley Mobile Mechanic | Repairs at your door</title>
+<meta name="description" content="Hensley Mobile Mechanic comes to you for brakes, transmission service, suspension, alternators, starters, radiators, shocks and tune-ups. Text or call 760.867.5726.">
+<meta name="theme-color" content="#eceded">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top" aria-label="Hensley Mobile Mechanic, top of page">Hensley</a>
+  <nav aria-label="Main">
+    <a href="#services">Services</a>
+    <a href="#quote">Get a quote</a>
+    <a class="btn btn-dark" href="tel:+17608675726">Call 760.867.5726</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy">
+      <h1><span>The shop</span> <span>comes to you.</span></h1>
+      <p class="lead">Brakes, starters, alternators and more, fixed in your driveway or parking lot. No tow, no waiting room.</p>
+      <div class="cta">
+        <a class="btn btn-dark" href="#quote">Get a quote by text</a>
+        <a class="btn btn-line" href="tel:+17608675726">Call now</a>
+      </div>
+    </div>
+    <img class="hero-logo" src="assets/logo.webp" width="1400" height="933" alt="Hensley Mobile Mechanic logo with a tire and crossed wrenches. Driven by faith, guided by truth." fetchpriority="high">
+  </section>
+
+  <section class="phone" aria-label="Phone number">
+    <a href="tel:+17608675726">760.867.5726</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>What we fix on site</h2>
+    <ul>
+      <li><h3>Brakes</h3><p>Pads, rotors and the squeal you keep hearing.</p></li>
+      <li><h3>Transmission service</h3><p>Fluid and filter service to keep shifts smooth.</p></li>
+      <li><h3>Suspension and shocks</h3><p>Fix the bounce, the pull and the rough ride.</p></li>
+      <li><h3>Alternators</h3><p>Dead battery light or no charge? We swap it where you park.</p></li>
+      <li><h3>Starters</h3><p>Click, no crank. We replace it on the spot.</p></li>
+      <li><h3>Radiators</h3><p>Leaks and overheating handled before they cost you an engine.</p></li>
+      <li><h3>Tune-ups</h3><p>Routine care that keeps your car running right.</p></li>
+      <li><h3>Something else</h3><p>Not on the list? Text us. We will tell you if we can do it.</p></li>
+    </ul>
+  </section>
+
+  <section id="quote" class="quote" aria-labelledby="qt">
+    <div class="panel">
+      <h2 id="qt">Get a quote in three taps</h2>
+      <div class="bar" aria-hidden="true"><i></i></div>
+      <form id="flow" novalidate>
+        <div class="step" data-step="0">
+          <p class="q">What does it need?</p>
+          <div class="opts">
+            <button type="button" data-v="Brakes">Brakes</button>
+            <button type="button" data-v="Transmission service">Transmission</button>
+            <button type="button" data-v="Suspension or shocks">Suspension or shocks</button>
+            <button type="button" data-v="Starter or alternator">Starter or alternator</button>
+            <button type="button" data-v="Radiator">Radiator</button>
+            <button type="button" data-v="Tune-up">Tune-up</button>
+            <button type="button" data-v="Not sure">Not sure</button>
+          </div>
+        </div>
+        <div class="step" data-step="1" hidden>
+          <label class="q" for="car">Which vehicle?</label>
+          <input id="car" autocomplete="off" placeholder="Year, make and model">
+          <button type="button" class="btn btn-light next">Next</button>
+        </div>
+        <div class="step" data-step="2" hidden>
+          <label class="q" for="loc">Where should we meet you?</label>
+          <input id="loc" autocomplete="postal-code" placeholder="City or ZIP code">
+          <button type="button" class="btn btn-light next">Review</button>
+        </div>
+        <div class="step" data-step="3" hidden>
+          <p class="q">Ready to send.</p>
+          <p class="sum" id="sum"></p>
+          <a class="btn btn-light" id="send" href="sms:+17608675726">Send by text</a>
+          <button type="button" class="link" id="reset">Start over</button>
+        </div>
+        <button type="button" class="link back" hidden>Back</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="faith">
+    <p>Driven by faith. Guided by truth.</p>
+  </section>
+</main>
+
+<footer>
+  <span>&copy; <span id="yr">2026</span> Hensley Mobile Mechanic</span>
+  <a href="tel:+17608675726">760.867.5726</a>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
